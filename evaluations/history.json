@@ -1,0 +1,50 @@
+[
+  {
+    "prompt": "bug_to_user_story_v2",
+    "scores": {
+      "tone_score": 0.0,
+      "acceptance_criteria_score": 0.0,
+      "user_story_format_score": 0.0,
+      "completeness_score": 0.0
+    },
+    "passed": false,
+    "timestamp": "2026-05-09T20:44:08.643150",
+    "iteration": 1
+  },
+  {
+    "prompt": "bug_to_user_story_v2",
+    "scores": {
+      "tone_score": 0.0,
+      "acceptance_criteria_score": 0.0,
+      "user_story_format_score": 0.0,
+      "completeness_score": 0.0
+    },
+    "passed": false,
+    "timestamp": "2026-05-09T20:44:29.345240",
+    "iteration": 2
+  },
+  {
+    "prompt": "bug_to_user_story_v2",
+    "scores": {
+      "tone_score": 0.0,
+      "acceptance_criteria_score": 0.0,
+      "user_story_format_score": 0.0,
+      "completeness_score": 0.0
+    },
+    "passed": false,
+    "timestamp": "2026-05-09T20:59:17.627344",
+    "iteration": 3
+  },
+  {
+    "prompt": "bug_to_user_story_v2",
+    "scores": {
+      "tone_score": 0.725,
+      "acceptance_criteria_score": 0.725,
+      "user_story_format_score": 0.75,
+      "completeness_score": 0.75
+    },
+    "passed": false,
+    "timestamp": "2026-05-09T21:07:45.734598",
+    "iteration": 4
+  }
+]
