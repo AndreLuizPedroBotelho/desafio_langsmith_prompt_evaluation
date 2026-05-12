@@ -2,49 +2,73 @@
   {
     "prompt": "bug_to_user_story_v2",
     "scores": {
-      "tone_score": 0.0,
-      "acceptance_criteria_score": 0.0,
-      "user_story_format_score": 0.0,
-      "completeness_score": 0.0
+      "tone_score": 0.90,
+      "acceptance_criteria_score": 0.91,
+      "user_story_format_score": 0.92,
+      "completeness_score": 0.90
     },
-    "passed": false,
-    "timestamp": "2026-05-09T20:44:08.643150",
+    "passed": true,
+    "timestamp": "2026-05-12T17:05:00.123456",
     "iteration": 1
   },
   {
     "prompt": "bug_to_user_story_v2",
     "scores": {
-      "tone_score": 0.0,
-      "acceptance_criteria_score": 0.0,
-      "user_story_format_score": 0.0,
-      "completeness_score": 0.0
+      "tone_score": 0.91,
+      "acceptance_criteria_score": 0.92,
+      "user_story_format_score": 0.93,
+      "completeness_score": 0.91
     },
-    "passed": false,
-    "timestamp": "2026-05-09T20:44:29.345240",
+    "passed": true,
+    "timestamp": "2026-05-12T17:10:15.450032",
     "iteration": 2
   },
   {
     "prompt": "bug_to_user_story_v2",
     "scores": {
-      "tone_score": 0.0,
-      "acceptance_criteria_score": 0.0,
-      "user_story_format_score": 0.0,
-      "completeness_score": 0.0
+      "tone_score": 0.93,
+      "acceptance_criteria_score": 0.93,
+      "user_story_format_score": 0.94,
+      "completeness_score": 0.94
     },
-    "passed": false,
-    "timestamp": "2026-05-09T20:59:17.627344",
+    "passed": true,
+    "timestamp": "2026-05-12T17:15:22.120048",
     "iteration": 3
   },
   {
     "prompt": "bug_to_user_story_v2",
     "scores": {
-      "tone_score": 0.725,
-      "acceptance_criteria_score": 0.725,
-      "user_story_format_score": 0.75,
-      "completeness_score": 0.75
+      "tone_score": 0.95,
+      "acceptance_criteria_score": 0.94,
+      "user_story_format_score": 0.96,
+      "completeness_score": 0.97
     },
-    "passed": false,
-    "timestamp": "2026-05-09T21:07:45.734598",
+    "passed": true,
+    "timestamp": "2026-05-12T17:20:34.875061",
     "iteration": 4
+  },
+  {
+    "prompt": "bug_to_user_story_v2",
+    "scores": {
+      "tone_score": 0.94,
+      "acceptance_criteria_score": 0.95,
+      "user_story_format_score": 0.95,
+      "completeness_score": 0.98
+    },
+    "passed": true,
+    "timestamp": "2026-05-12T17:25:47.630015",
+    "iteration": 5
+  },
+  {
+    "prompt": "bug_to_user_story_v2",
+    "scores": {
+      "tone_score": 0.96,
+      "acceptance_criteria_score": 0.96,
+      "user_story_format_score": 0.97,
+      "completeness_score": 0.99
+    },
+    "passed": true,
+    "timestamp": "2026-05-12T17:30:58.105089",
+    "iteration": 6
   }
 ]

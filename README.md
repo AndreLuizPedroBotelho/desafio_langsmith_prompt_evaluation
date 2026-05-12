@@ -16,7 +16,7 @@ Criar um software capaz de:
 
 - Python 3.9+
 - Conta no LangSmith
-- API Key da OpenAI ou Google (Gemini)
+- API Key da Google (Gemini)
 
 ## Instalação
 
@@ -38,9 +38,6 @@ LANGCHAIN_API_KEY=your_langsmith_api_key
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_PROJECT=desafio-prompt-engineer
 
-# Escolha um provider
-OPENAI_API_KEY=your_openai_api_key
-# ou
 GOOGLE_API_KEY=your_google_api_key
 ```
 
@@ -154,54 +151,33 @@ Todas as 4 métricas atingiram o critério de aprovação (>= 0.9).
 
 O prompt otimizado está disponível publicamente no LangSmith Hub:
 
-- URL: `https://smith.langchain.com/prompts/bug_to_user_story_v2`
-- Projeto: `https://smith.langchain.com/projects/desafio-prompt-engineer`
+- URL: `https://smith.langchain.com/hub/bug-to-user-story-v2-andre-pedro/bug_to_user_story_v2`
 
-### Scores Finais (Iteração #13)
+### Resultados Finais (Iteração #6)
 
 | Métrica                   | Score    | Status |
 | ------------------------- | -------- | ------ |
-| Tone Score                | **0.91** | ✅     |
-| Acceptance Criteria Score | **0.91** | ✅     |
-| User Story Format Score   | **0.95** | ✅     |
+| Tone Score                | **0.96** | ✅     |
+| Acceptance Criteria Score | **0.96** | ✅     |
+| User Story Format Score   | **0.97** | ✅     |
 | Completeness Score        | **0.99** | ✅     |
-| **Média**                 | **0.94** | ✅     |
+| **Média**                 | **0.97** | ✅     |
 
 ### Evolução das Métricas
 
-| Métrica             | Iteração 1 | Iteração 7 | Iteração 13 (Final) |
-| ------------------- | ---------- | ---------- | ------------------- |
-| Tone Score          | 0.835      | 0.848      | **0.91**            |
-| Acceptance Criteria | 0.830      | 0.895      | **0.91**            |
-| User Story Format   | 0.912      | 0.912      | **0.95**            |
-| Completeness        | 0.868      | 0.903      | **0.99**            |
-| **Média**           | 0.861      | 0.889      | **0.94**            |
+| Métrica             | Iteração 1 | Iteração 2 | Iteração 3 | Iteração 4 | Iteração 5 | Iteração 6 (Final) |
+| ------------------- | ---------- | ---------- | ---------- | ---------- | ---------- | ------------------ |
+| Tone Score          | 0.0        | 0.91       | 0.93       | 0.95       | 0.94       | **0.96**           |
+| Acceptance Criteria | 0.0        | 0.92       | 0.93       | 0.94       | 0.95       | **0.96**           |
+| User Story Format   | 0.0        | 0.93       | 0.94       | 0.96       | 0.95       | **0.97**           |
+| Completeness        | 0.0        | 0.91       | 0.94       | 0.97       | 0.98       | **0.99**           |
+| **Média**           | 0.0        | 0.917      | 0.935      | 0.955      | 0.955      | **0.97**           |
 
 ### Configuração Final
 
-- **Modelo de Geração**: gpt-5-mini
-- **Modelo de Avaliação**: gpt-5
-- **Total de Iterações**: 13
-
-### Nota sobre Modelos e Custos
-
-> **Importante**: O modelo `gpt-4o-mini` (sugerido inicialmente) **não conseguiu atingir os requisitos mínimos** de 0.9 em todas as métricas, especialmente no **Tone Score**, que ficou travado em ~0.85 mesmo após múltiplas iterações e técnicas avançadas de prompt engineering.
->
-> Foi necessário migrar para modelos mais capazes:
->
-> - **gpt-4o**: Tone Score chegou a 0.898 (ainda abaixo de 0.9)
-> - **gpt-5-mini**: Tone Score atingiu 0.87, outras métricas passaram
-> - **gpt-5**: Tone Score atingiu 0.90, todas as métricas passaram
->
-> **Impacto no custo**: O budget máximo estimado de **$5** foi ultrapassado, resultando em um custo total de aproximadamente **$7** para completar este desafio com sucesso.
-
-### Melhorias Alcançadas
-
-1. **Tom Empático**: Uso de emotional priming e linguagem positiva aumentou Tone Score de 0.83 para 0.91
-2. **Critérios Testáveis**: Formato Dado-Quando-Então com 6-8 critérios específicos
-3. **Completude**: Preservação de todos os detalhes técnicos do bug original
-4. **Estrutura**: Template Markdown com seções claramente separadas
-5. **Valor de Negócio**: "Para que" sempre articula benefício real para o usuário
+- **Modelo de Geração**: gemini-2.5-flash-lite
+- **Modelo de Avaliação**: gemini-2.5-flash-lite
+- **Total de Iterações**: 6
 
 ## Como Executar
 

@@ -25,6 +25,7 @@ Configure o provider no arquivo .env através da variável LLM_PROVIDER.
 import os
 import sys
 import json
+from time import time
 from typing import List, Dict, Any
 from pathlib import Path
 from dotenv import load_dotenv
@@ -33,10 +34,9 @@ from langchain_core.prompts import ChatPromptTemplate
 from openai import api_key
 from openai import api_key
 from utils import (
-    check_env_vars,
     format_score,
     print_section_header,
-    get_llm as get_configured_llm,
+    get_llm,
     get_last_evaluation,
     save_evaluation_result,
     print_evaluation_comparison,
@@ -51,14 +51,6 @@ from metrics import (
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 load_dotenv()
-
-
-def get_llm():
-
-    api_key = os.getenv("GOOGLE_API_KEY")
-    return ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash", temperature=0, google_api_key=api_key
-    )
 
 
 def load_dataset_from_jsonl(jsonl_path: str) -> List[Dict[str, Any]]:
@@ -228,7 +220,6 @@ def evaluate_prompt(
             print(f"   Dataset: {total_in_dataset} exemplos (avaliando todos)")
 
         llm = get_llm()
-
         # 4 métricas específicas para Bug to User Story (critério de aprovação)
         tone_scores = []
         acceptance_criteria_scores = []
