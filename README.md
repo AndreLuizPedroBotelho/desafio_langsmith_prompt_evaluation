@@ -37,7 +37,6 @@ Crie um arquivo `.env` com suas credenciais:
 LANGCHAIN_API_KEY=your_langsmith_api_key
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_PROJECT=desafio-prompt-engineer
-
 GOOGLE_API_KEY=your_google_api_key
 ```
 
